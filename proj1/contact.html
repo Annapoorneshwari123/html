@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>about</title>
+        <style>
+             *{
+                background-color: whitesmoke;
+            }
+            div{
+                
+                display:flex;
+                text-align:right;
+                gap:20px;
+                justify-content:space-between;
+                font-size: 20px;
+                margin:20px;
+            
+            }
+            .picture img{
+               
+               height: 600px;
+               width: 900px;
+               filter: contrast(50px);
+               padding: 3px;
+
+           }
+           .web{
+                text-align: left;
+                justify-content: center;
+                margin: auto;
+                font-size: 30px;
+            }
+            button:hover{
+                background-color: black;
+                color: #fff;
+            }
+            button a:hover {
+                color: #fff !important;
+            }
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                color:black;
+                justify-content: space-between;
+
+            }
+            button{
+                border: none;
+                padding: 20px;
+                width: 150px;
+                border-radius: 100px;
+                display: block;
+                margin: auto;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            
+            <div class="right">
+                <p>logo</p>
+            
+            <div class="left">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT US</a>
+                <a href="./contact.html">CONTACT US</a>
+            </div>
+            </div>
+       <div>
+        <section class="picture">
+            <marquee behavior="slide" direction="right" scrollamount="15">
+            <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/d6839ed682b059f88f5d8068/ddd-min.png" alt="">
+            </marquee>
+        </section>
+        <section class="web">
+            <marquee behavior="slide" direction="left" scrollamount="10">
+            <p>Contact US</p>
+            <p> <span style="color:#ec5711;">Inspiring and empowering your teams</span><br/> with cultural and process innovation</p>
+            <p>Image for <u>Freepik</u></p>
+            <button><a href="./contact.html">Contact Us</a></button>
+        </marquee>
+        </section>
+        
+       </div> 
+    </body>
+</html>

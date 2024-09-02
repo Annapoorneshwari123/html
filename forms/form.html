@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            min-height: 100vh;
+            background-image:url(./bgimg.jpeg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        } 
+        form{
+            width: 50%;
+            background-color:transparent;
+            padding: 30px;
+            border: 2px solid #fff;
+            backdrop-filter: blur(10px);
+            
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+            
+        }
+        input[type="text"], input[type="date"], select, input[type="tel"],input[type="email"],input[type="time"]{
+            padding: 8px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            width: 300px;
+            background-color: transparent;
+
+        }
+        input:focus{
+            box-shadow: 0px 0px 3px rgba(34, 181, 204, 0.733);
+            border: 1px solid rgb(77, 130, 165);
+        }
+        .details{
+            display: flex;
+            gap: 30px;
+            
+        }
+        .add{
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            
+        }
+        button[type="button"]{
+            padding: 10px;
+            width: 600px;
+            background-color:whitesmoke;
+            border: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            margin: 15px;
+        }
+        button:hover{
+            background-color: transparent;
+            color:#ccc;
+        }
+
+            
+        </style>
+    </head>
+
+    <body>
+       
+        <section>
+            <form>
+                <h1>
+                    <center>
+                        APPOINTMENT FORM
+                    </center>
+                </h1>
+                <br><br>
+                <label for="name">FullName</label><br>
+                <input type="text" name="" id="" placeholder="Enter your Fullname">
+                <br/>
+    
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" placeholder="enter your number">
+                <br/>
+    
+                <label for="email">Email Address</label><br>
+                <input type="email" placeholder="enter your email">
+                <br/>
+    
+                <div style="display: flex;gap: 30px;">
+                    <div>
+                        <label for="Date">Date</label><br>
+                        <input type="date" placeholder="dd/mm/yyyy">
+                        <br/>
+                    </div>
+                    <div>
+                        <label for="time">time</label><br>
+                        <input type="time" placeholder="">
+                        <br/>
+                    </div>
+                </div>
+    
+                 
+                    <label for="">Address Details</label><br/>
+                    <div class="details">
+                    <div>
+                        <input type="text" placeholder="Enter Area"><br>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter city"><br>
+                    </div>
+                 </div>
+            <div class="add">
+                <div>
+                    <input type="text" placeholder="Enter state"><br>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter pincode"><br>
+                </div>
+            </div>
+
+            <div><button type="button">BOOK APPOINTMENT</button></div>
+
+
+        </form>
+        </section>
+    </body>
+</html>

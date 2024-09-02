@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>html tables</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 20px;
+            }
+            table th{
+                background-color: blueviolet;
+                letter-spacing: 2px;
+                color: white;
+                border: 2px solid black;
+            }
+            table td{
+                font-size: 1.3rem;
+
+            }
+            table td:hover{
+                background-color: gray;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>
+                tables
+            </h1>
+        </center>
+    <table border="1"  cellpadding="20" cell spacing="20">
+        <caption>column with colspan</caption>
+        <tr>
+            <th></th>
+            <th colspan="2">Average</th>
+            <th>red eyes</th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>height</th>
+            <th>weight</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    </body>
+</html>
