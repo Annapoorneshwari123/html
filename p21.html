@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>select tag</title>
+    </head>
+     <body>
+        <center>
+            <h1>select tag</h1>
+            <p></p>
+        </center>
+
+        <select name="language" id="language">
+            <option value="" disabled selected>select course</option>
+            <option value="html">html</option>
+            <option value="html5">html5</option>
+            <option value="css">css</option>
+            <option value="css3">css3</option>
+
+        </select>
+
+        <h1>grouping options in select</h1>
+        <select name="course" id="course">
+        <option value="" disabled selected>select course</option>
+        <optgroup label="month1">
+            <option value="html">html</option>
+        <option value="html5">html5</option>
+        </optgroup>
+        <optgroup label="month2">
+            <option value="css">css</option>
+            <option value="css3">css3</option>   
+        </optgroup>
+        <optgroup label="month3">
+            <option value="bootstrap">bootstrap</option>
+            <option value="js">js</option>   
+        </optgroup>
+
+    </select>
+    <button type="button" onclick="getvalue()">call function</button>
+
+    <script>
+        function getvalue(){
+            console.log(document.getElementById('course').name);
+        }
+    </script>
+     </body>
+</html>
